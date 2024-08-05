@@ -7,7 +7,7 @@ document.getElementById("request-quote-form").addEventListener("submit", functio
         jsonData[key] = value;
     });
 
-    axios.post('http://localhost:1111/submit-form', jsonData)
+    axios.post('https://am-premier-server.onrender.com/submit-form', jsonData)
     .then(response => {
         // Handle success response
         console.log(response.data);
